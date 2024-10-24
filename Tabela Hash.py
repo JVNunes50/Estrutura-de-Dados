@@ -22,5 +22,12 @@ class TabelaHash:
             if c == chave:
                 Lista[i] = (chave, (nome, idade, telefone)) # Atualiza o valor se a chave já existe
                 return
-            
+
+            # Se a chave não existir, insere um novo par
+            Lista.append((chave,(nome, idade, telefone)))
                 print(Lista)
+                
+    def exibir(self):
+    # Exibe o conteúdo da tabela hash
+    for i, Lista_colisao in enumerate(self.tabela):
+        print(f"Índice {i}: {Lista_colisao}")
