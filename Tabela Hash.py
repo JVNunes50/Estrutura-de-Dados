@@ -31,3 +31,12 @@ class TabelaHash:
     # Exibe o conteúdo da tabela hash
     for i, Lista_colisao in enumerate(self.tabela):
         print(f"Índice {i}: {Lista_colisao}")
+
+tabela_hash = TabelaHash(tamanho = 13)
+
+# Inserir elementos
+tabela_hash.inserir(23, "João", "23", "999999999")
+tabela_hash.inserir(12, "Maria", "23", "999999999")
+tabela_hash.inserir(0, "Jose", "50", "999999999")
+tabela_hash.inserir(39, "Lucas", "45", "999999999")
+tabela_hash.inserir(23, "João alterado", "25", "999999999")
