@@ -25,7 +25,7 @@ class TabelaHash:
 
             # Se a chave não existir, insere um novo par
             Lista.append((chave,(nome, idade, telefone)))
-                print(Lista)
+            print(Lista)
                 
     def exibir(self):
     # Exibe o conteúdo da tabela hash
